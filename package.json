@@ -1,0 +1,15 @@
+{
+	"name": "flexbox",
+	"version": "0.0.0",
+	"description": "Flexbox samples",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"express": "*",
+		"connect": "*"
+	},
+	"author": "Chandra Sekhar Veera",
+	"license": "ISC"
+}
