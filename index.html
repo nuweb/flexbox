@@ -3,8 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Flexbox</title>
+	<style>
+		body {
+			font-family: Helvetica neue;
+		}
+		h1 {
+			color: red;
+			text-align: center;
+		}
+		
+		ul {
+			background: #ccc;
+			list-style: none;
+			font-size: 2em;
+			display: flex;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			background: #eee;
+			margin: 5px;
+			padding: 10px;
+			text-align: center;
+		}
+
+		/* Navigation 1 */
+
+		ul#nav0 li {
+			flex: auto;		/* spacing around the text gets distributed equally */
+		}
+
+		/* Navigation 1 */
+
+		ul#nav1 {
+			justify-content: space-around; /* spacing around the text gets distributed equally */
+		}
+		ul#nav1 li {
+			/* below properties allow vertical centering the list item */
+			display: flex;
+			align-items: center;
+		}
+
+	</style>
 </head>
 <body>
-	
+	<h1>Flexbox</h1>
+	<ul id="nav0">
+		<li>Products</li>
+		<li>About Conde Nast</li>
+		<li>Contact Us</li>
+	</ul>
+	<br>
+	<ul id="nav1">
+		<li>Products</li>
+		<li>About <br>Conde Nast</li>
+		<li>Contact Us</li>
+	</ul>
 </body>
 </html>
